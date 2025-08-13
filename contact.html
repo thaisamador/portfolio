@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact – Thaís Amador</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="home">
+
+  <header>
+    <nav class="navbar">
+      <div class="nav-left"><h2></h2></div>
+      <div class="nav-right">
+        <a href="index.html">Home</a>
+        <a href="resume.html">CV/Resume</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="left-column">
+      <img src="img/photo-360.jpg" srcset="img/photo-360.jpg 1x, img/photo-720.jpg 2x" alt="Thaís Amador" class="profile-pic">
+      <h3>Thaís Amador</h3>
+      <p class="role">Data Analyst &amp; Business Intelligence</p>
+      <div class="personal-info">
+        <p><img src="img/location.jpg" class="icon" alt="">Hermosillo, Sonora, Mexico</p>
+        <p><a href="https://www.linkedin.com/in/tha%C3%ADs-amador/" target="_blank" rel="noopener">
+          <img src="img/linkedin.jpg" class="icon" alt="LinkedIn">LinkedIn</a></p>
+        <p><a href="https://github.com/thaisamador" target="_blank" rel="noopener">
+          <img src="img/github.png" class="icon" alt="GitHub">GitHub</a></p>
+      </div>
+    </section>
+
+    <section class="right-column">
+      <h1>Contact Me</h1>
+      <p class="subtitle">Feel free to reach out for collaborations, job opportunities, or any inquiries.</p>
+
+      <h2>Send a Message</h2>
+      <form class="contact-form" action="https://formspree.io/f/xqalnjaz" method="POST">
+        <input type="text" name="_gotcha" style="display:none">
+        <input type="hidden" name="_subject" value="New message from portfolio contact form">
+
+        <div class="form-row">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="_replyto" type="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="form-row">
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" placeholder="How can I help?" required>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary">Send</button>
+      </form>
+
+      <h2></h2>
+      <p>You can also email me directly: <a href="mailto:thaisamador1@gmail.com">thaisamador1@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Thaís Amador. All rights reserved.</p>
+  </footer>
+</body>
+</html>
